@@ -1,0 +1,7 @@
+# Minimal Supabase CLI config. Everything not listed uses the CLI defaults.
+project_id = "secret-santa"
+
+# The api function authenticates callers with their personal secret token
+# (x-santa-token header), not with a Supabase JWT.
+[functions.api]
+verify_jwt = false
